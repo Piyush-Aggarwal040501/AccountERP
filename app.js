@@ -17,13 +17,18 @@ app.use(express.static(__dirname + '/public'));
 router.get('/signup',function(req,res){
   res.sendFile(path.join(__dirname+'/src/signup.html'));
 });
+router.get('/forgotPassword',function(req,res){
+  res.sendFile(path.join(__dirname+'/src/forgotPassword.html'));
+});
 router.get('/',function(req,res){
   res.sendFile(path.join(__dirname+'/src/login.html'));
 });
+router.get('/companyRegestration',function(req,res){
+  res.sendFile(path.join(__dirname+'/src/company.html'));
+});
 
 
-// app.use(require('./requests/signup'));
-// app.use(require('./requests/login'));
+
 
 
 

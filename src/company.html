@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="../css/general.css">
 
         <!-- regestration css file  -->
-        <link rel="stylesheet" href="../css/regestration.css">
+        <link rel="stylesheet" href="../css/forms.css">
 
         <!-- google fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,12 +22,12 @@
         <!-- fontawesome link  -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
-        <title>Account ERP || Login</title>
+        <title>Account ERP || Company Rgestration</title>
     </head>
     <body>
 
-        <div id="login" class="regestration">
-            <div class="alert alert-dismissible fade show font2" role="alert" id="alertInternalError">
+        <div id="company" class="forms">
+            <!-- <div class="alert alert-dismissible fade show font2" role="alert" id="alertInternalError">
                 <strong class="font1">Internnal Error !</strong> Sorry not able to get your acccount please try after some time.
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
@@ -38,39 +38,46 @@
             <div class="alert alert-dismissible fade show font2" role="alert" id="alertInvalidCredentials">
                 <strong class="font1">InvalidCredentials !</strong> email or password is incorrect.
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-            <div class="container py-3 d-flex align-items-center justify-content-center">
-                <div class="box">
-                    <center class="logo">
-                        <div id="logo" href="/">
-                            Account ERP
-                        </div>
-                    </center>
-                    <form action="">
-                        <label for="fullname">Email Id</label><br>
-                        <div class="d-flex justify-content-center align-items-center inputBox">
-                            <i class="fas fa-envelope"></i>
-                            <input type="email" name="email"><br>
-                        </div>
+            </div> -->
+            <div class="container py-3 d-flex align-items-center justify-content-center flex-column">
+                <h2>Company Regestration</h2>
+                <form action="">
+                    <div class="smallBox">
+                        <label for="namePurpose">Name of purpose of company</label>
+                        <input type="text" name="namePurpose">
+                    </div>
+                    <div class="smallBox">
+                        <label for="type">Compnay Type</label>
+                        <input type="text" name="type">
+                    </div>
+                    <div class="smallBox">
+                        <label for="purpose">Purpose</label>
+                        <input type="text" name="purpose">
+                    </div>
+                    <div class="smallBox">
+                        <label for="paidCapital">Paid Capital</label>
+                        <input type="text" name="paidCapital">
+                    </div>
+                    <div class="smallBox">
+                        <label for="authorizedCapital">Authorized Capital</label>
+                        <input type="text" name="authorizedCapital">
+                    </div>
+                    <div class="smallBox specialSmallBox">
+                        <input type="checkbox" name="reserveName">
+                        <label for="reserveName">Reserve your name to fill form</label>
+                    </div>
+                    <div class="smallBox">
+                        <label for="address">Address</label>
+                        <input type="text" name="address">
+                    </div>
+                    <div class="smallBox">
+                        <label for="addressProof">Address Proof</label>
+                        <input type="file" name="addressProof">
+                    </div>
 
-                        <label for="fullname">Password</label><br>
-                        <div id="password" class="d-flex justify-content-center align-items-center inputBox">
-                            <i class="fas fa-lock"></i>
-                            <input type="password" name="password">
-                            <div id="showHide">
-                                <i class="fas fa-eye-slash"></i>
-                            </div>
-                        </div>
 
-                        <button id="submit" class="btn bgBtn solidBtn">Log In</button>
-                    </form>
-                    <center style="margin-top: 10px;">
-                       Forgot password not to worry | <a href="/forgotPassword">click here</a>
-                    </center>
-                    <center style="margin-top: 10px;">
-                       Don't have an account ?<a href="/signup">Signup</a>
-                    </center>
-                </div>
+                    <button id="submit" class="btn bgBtn solidBtn">Submit Details</button>
+                </form>
             </div>
         </div>
         <script src="../js/login.js"></script>
