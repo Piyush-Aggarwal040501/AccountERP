@@ -7,7 +7,7 @@
 
 
 :root {
-    --color1: #02a800;
+    --color1: #00a862;
     --font1: 'Playfair Display', serif;
     --font2: 'Hina Mincho', serif;
 }
@@ -64,12 +64,41 @@ a,button{
     cursor: pointer;
     font-size: 33px;
     font-family: fantasy;
-    color: #a5a5a5;
+    color: #453f3f;
 }
-@media only screen and (max-width:576px){
-    .logo img{
-        width: 160px;
-    }
+nav{
+    background: var(--color1);
+}
+nav .nav-link{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+}
+nav .nav-link:hover{
+    color: rgb(202, 201, 201);
+}
+nav .active .nav-link{
+    color: black;
+    font-weight: 600;
+}
+nav #logoutBtn{
+    color: white;
+    background: #682727;
+    padding: 5px 19px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: #453f3f;
+    border: 1px solid white;
+    border-radius: .25rem;
+    transition: box-shadow .15s ease-in-out;
+    height: 31px;
 }
 
 
