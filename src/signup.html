@@ -27,18 +27,6 @@
     <body>
 
         <div id="signup" class="regestration">
-            <div class="alert alert-dismissible fade show font2" role="alert" id="alertInternalError">
-                <strong class="font1">Internnal Error !</strong> Sorry not able to regester your acccount please try after some time.
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-            <div class="alert alert-dismissible fade show font2" role="alert" id="alertUserExist">
-                <strong class="font1">User Exist !</strong> User with this email already exist please try different mail id.
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-            <div class="alert alert-dismissible fade show font2" role="alert" id="alertIncomplete">
-                <strong class="font1">Fill Completely !</strong> Itsnecessary to fill al the details
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
             <div class="container py-3 d-flex align-items-center justify-content-center">
                 <div class="box">
                     <center class="logo">
@@ -46,7 +34,7 @@
                             Account ERP
                         </div>
                     </center>
-                    <form action="">
+                    <form id="myForm">
                         
                         <label for="fullname">Email Id</label><br>
                         <div class="d-flex justify-content-center align-items-center inputBox">
@@ -71,8 +59,7 @@
                                 <i class="fas fa-eye-slash"></i>
                             </div>
                         </div>
-
-                        <button id="submit" class="btn bgBtn solidBtn">Sign up</button>
+                        <button type="submit" class="btn bgBtn solidBtn" >Sign up</button>
                     </form>
                     <center style="margin-top: 10px;">
                         Already have an account ?<a href="/">Log In</a>
@@ -80,6 +67,13 @@
                 </div>
             </div>
         </div>
+        <script>
+           document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+            window.location.href = "/companyRegestration"
+            
+        });
+        </script>
         <script src="../js/signup.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>

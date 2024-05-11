@@ -26,6 +26,21 @@ router.get('/',function(req,res){
 router.get('/companyRegestration',function(req,res){
   res.sendFile(path.join(__dirname+'/src/company.html'));
 });
+router.get('/directorRegestration',function(req,res){
+  res.sendFile(path.join(__dirname+'/src/directorRegestrationPage.html'));
+});
+router.get('/directorFileUpload',function(req,res){
+  res.sendFile(path.join(__dirname+'/src/directorFileUpload.html'));
+});
+router.get('/otherDocuments',function(req,res){
+  res.sendFile(path.join(__dirname+'/src/otherDocumentsUpload.html'));
+});
+router.get('/companyDetails',function(req,res){
+  res.sendFile(path.join(__dirname+'/src/companyDetails.html'));
+});
+router.get('/quotation',function(req,res){
+  res.sendFile(path.join(__dirname+'/src/quotation.html'));
+});
 
 
 

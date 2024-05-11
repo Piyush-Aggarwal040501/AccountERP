@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <!-- general css file  -->
+        <link rel="stylesheet" href="../css/general.css">
+
+        <!-- regestration css file  -->
+        <link rel="stylesheet" href="../css/forms.css">
+
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+        <!-- fontawesome link  -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+        <title>Account ERP || Director File Upload</title>
+    </head>
+    <body>
+        <!-- navbar starts  -->
+        <nav class="navbar navbar-expand-lg px-4">
+            <div id="logo" class="navbar-brand">
+                Account ERP
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="/companyRegestration">Company Registartion</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="/directorRegestration">Director Registartion</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link active" href="/directorFileUpload">Director File Upload</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="/otherDocuments">Other Documents</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="/companyDetails">Company details</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="/quotation">Quotation</a>
+                </li>
+              </ul>
+              <a id="logoutBtn" href="/" class="my-2 my-lg-0 ms-auto">
+                Logout
+              </a>
+            </div>
+          </nav>
+        <!-- navbar ends -->
+        <div id="company" class="forms">
+            <div class="container py-3 d-flex align-items-center justify-content-center flex-column">
+                <h2>Director File Upload</h2>
+                <form action="">
+                    
+                    <div class="smallBox">
+                        <label for="pan">PAN Card</label>
+                        <input type="file" name="pan">
+                    </div>
+                    <div class="smallBox">
+                        <label for="addressProof">Address Proof</label>
+                        <input type="file" name="addressProof">
+                    </div>
+                    <div class="smallBox">
+                        <label for="passport">Passport</label>
+                        <input type="file" name="passport">
+                    </div>
+                    <div class="smallBox">
+                        <label for="dl">Driving Liscence</label>
+                        <input type="file" name="dl">
+                    </div>
+                    <div class="smallBox">
+                        <label for="votingCard">Voting Card</label>
+                        <input type="file" name="votingCard">
+                    </div>
+                    <div class="smallBox">
+                        <label for="bankStatement">Bank Statement</label>
+                        <input type="file" name="bankStatement">
+                    </div>
+                    <div class="smallBox">
+                        <label for="lightBill">Light Bill</label>
+                        <input type="file" name="lightBill">
+                    </div>
+                    <div class="smallBox">
+                        <label for="photo">Photo</label>
+                        <input type="file" name="photo">
+                    </div>
+                    <div class="smallBox">
+                        <label for="sign">Director Sign</label>
+                        <input type="file" name="sign">
+                    </div>
+
+                    <button id="submit" class="btn bgBtn solidBtn">Submit Details</button>
+                </form>
+            </div>
+        </div>
+        <script src="../js/login.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
